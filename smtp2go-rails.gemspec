@@ -29,4 +29,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'sqlite3', '~> 1.3'
   s.add_development_dependency 'vcr', '~> 3.0', '>= 3.0.3'
   s.add_development_dependency 'webmock', '~> 2.3', '>= 2.3.2'
+  s.add_development_dependency 'csv'
 end
