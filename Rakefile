@@ -14,20 +14,14 @@ RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
-
-
-
-
-
 require 'bundler/gem_tasks'
 
-require 'rake/testtask'
+require 'minitest/test_task'
 
-Rake::TestTask.new(:test) do |t|
-  t.libs << 'lib'
-  t.libs << 'test'
-  t.pattern = 'test/**/*_test.rb'
-  t.verbose = false
+Minitest::TestTask.create do |t|
+  t.framework = %(require "test/test_helper.rb")
+  t.libs = %w[test .]
+  t.test_globs = ['test/**/*_test.rb']
 end
 
 
