@@ -18,7 +18,6 @@ end
 # to be shown.
 Minitest.backtrace_filter = Minitest::BacktraceFilter.new
 
-Rails::TestUnitReporter.executable = 'bin/test'
 
 # Load fixtures from the engine
 if ActiveSupport::TestCase.respond_to?(:fixture_path=)
