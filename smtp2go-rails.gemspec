@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir['{app,config,db,lib}/**/*', 'LICENSE.txt', 'Rakefile', 'README.md']
 
-  s.add_runtime_dependency 'rails', '~> 8.0.1'
+  s.add_runtime_dependency 'rails', '~> 7.2'
   s.add_runtime_dependency 'smtp2go', '~> 0'
 
   s.add_development_dependency 'coveralls', '~> 0.8.19'
