@@ -1,2 +1,0 @@
-ARG RUBY_VERSION=3.4
-FROM ruby:latest
